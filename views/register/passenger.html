@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passenger Registration</title>
+  <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Passenger Information</h2>
+      <form action="/register/passenger" method="POST">
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- Passport -->
+        <label for="passport">Passport Number:</label>
+        <input type="text" id="passport" name="passport" required>
+        <!-- Phone with zone -->
+        <label for="phone">Phone Number:</label>
+        <div style="display:flex; gap:10px;">
+          <select name="phone_zone" required>
+            <option value="+212">+212 (Morocco)</option>
+            <option value="+1">+1 (USA)</option>
+            <option value="+33">+33 (France)</option>
+            <option value="+44">+44 (UK)</option>
+            <!-- add more zones as needed -->
+          </select>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <button type="submit">Complete Registration</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

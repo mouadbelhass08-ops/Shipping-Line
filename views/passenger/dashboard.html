@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passenger Dashboard</title>
+  <link rel="stylesheet" href="/css/passdash.css">
+</head>
+<body>
+  <div class="portal-container">
+    <header class="portal-header">
+      <h1>🚢 Passenger Dashboard</h1>
+      <button class="logout-btn" id="logoutBtn">Log Out</button>
+    </header>
+    <main class="content">
+      <div class="card">
+        <h3>Upcoming Voyages</h3>
+        <table id="voyagesTable">
+          <tr>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Seats</th>
+            <th>Price</th>
+            <th>Date</th>
+          </tr>
+          <!-- Rows will be rendered dynamically -->
+        </table>
+        <button class="action-btn" id="bookBtn">Book New Voyage</button>
+      </div>
+    </main>
+  </div>
+  <script src="/js/passdash.js"></script>
+</body>
+</html>
